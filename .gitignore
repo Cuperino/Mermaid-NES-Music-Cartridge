@@ -1,0 +1,11 @@
+bin/*
+
+*.o
+*.list
+src/music_nes_map.txt
+
+*.kate-swp
+*.code-workspace
+
+*.gif
+*.png
