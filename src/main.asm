@@ -104,9 +104,9 @@ reset:
 
 ;Palettes
 	lda #$3F		;Select Palette ram &3F00
-	sta $2006		;PPUADDR H
+	sta PPUADDR		;PPUADDR H
 	lda #0
-	sta $2006		;PPUADDR L
+	sta PPUADDR		;PPUADDR L
 
 	ldx #4
 PaletteAgain:
@@ -307,12 +307,12 @@ GetVDPScreenPos:			;BC=XYpos
 
 
 		; UNCOMMENT THIS LINE BEFORE DEPLOYING!!!
-		;jsr waitframe		;Wait for Vblank, COMMENT TO ITERATE FASTER DURING DEVELOPMENT
+		jsr waitframe		;Wait for Vblank, COMMENT TO ITERATE FASTER DURING DEVELOPMENT
 
 
-		sta $2006			;PPUADDR
+		sta PPUADDR			;PPUADDR
 		lda z_L
-		sta $2006			;PPUADDR
+		sta PPUADDR			;PPUADDR
 	rts
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -412,9 +412,9 @@ FillAreaWithTile_Xagain:
 prepareVram:				;Select a destination address
 
 		lda z_D				;MSB - DEST ADDR
-		sta $2006			;PPUADDR
+		sta PPUADDR			;PPUADDR
 		lda z_E				;LSB - Dest ADDR
-		sta $2006			;PPUADDR
+		sta PPUADDR			;PPUADDR
 	rts
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -441,9 +441,9 @@ NesEnableScreen:			;Turn ON the screen
 
 ResetScroll:
 	lda #0					;Scroll X
-	sta $2005				;PPUSCROLL
+	sta PPUSCROLL			;PPUSCROLL
  	; lda #248				;Scroll y
-	sta $2005				;PPUSCROLL
+	sta PPUSCROLL			;PPUSCROLL
 	rts
 
 
@@ -500,12 +500,9 @@ nmi:
 
    	inc vblanked
 
-	; ; refresh scroll position to 0,0
-	; lda #0
+	jsr ResetScroll
 	; sta OAMADDR
-	; sta PPUSCROLL
-	; sta PPUSCROLL
-
+	
 	; ; keep default PPU config
 	; sta PPUCTRL
 	lda #DEFMASK
