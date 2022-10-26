@@ -265,6 +265,32 @@ PaletteAgain:
 	lda #11					;TileStart
 	jsr FillAreaWithTiles	;Draw the tiles to screen
 
+	; Poster 2
+
+	lda #15					;Start SX
+	sta z_B
+	lda #10					;Start SY
+	sta z_C
+
+	ldx #3					;Width in tiles
+	ldy #4					;Height in tiles
+
+	lda #23					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
+	; Poster 3
+
+	lda #19					;Start SX
+	sta z_B
+	lda #15					;Start SY
+	sta z_C
+
+	ldx #3					;Width in tiles
+	ldy #3					;Height in tiles
+
+	lda #35					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
 	; Loop
 	jmp *					;Infinite loop
 
