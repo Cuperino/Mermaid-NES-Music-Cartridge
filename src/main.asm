@@ -169,6 +169,71 @@ PaletteAgain:
 	lda #1					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
+	; Dog 1
+
+	lda #2					;Start SX
+	sta z_B
+	lda #22					;Start SY
+	sta z_C
+
+	ldx #5					;Width in tiles
+	ldy #3					;Height in tiles
+
+	lda #1					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
+	; Dog torso
+
+	lda #1					;Start SX
+	sta z_B
+	lda #24					;Start SY
+	sta z_C
+
+	ldx #1					;Width in tiles
+	ldy #4					;Height in tiles
+
+	lda #16					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
+	; Dog white
+
+	lda #2					;Start SX
+	sta z_B
+	lda #25					;Start SY
+	sta z_C
+
+	ldx #1					;Width in tiles
+	ldy #2					;Height in tiles
+
+	lda #20					;TileStart
+	jsr FillAreaWithTile	;Draw the tiles to screen
+
+	; Dog chest
+
+	lda #3					;Start SX
+	sta z_B
+	lda #25					;Start SY
+	sta z_C
+
+	ldx #2					;Width in tiles
+	ldy #2					;Height in tiles
+
+	lda #21					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
+	; Dog legs
+
+	lda #2					;Start SX
+	sta z_B
+	lda #27					;Start SY
+	sta z_C
+
+	ldx #2					;Width in tiles
+	ldy #1					;Height in tiles
+
+	lda #25					;TileStart
+	jsr FillAreaWithTiles	;Draw the tiles to screen
+
 	; Top Border
 
 	lda #10					;Start SX
@@ -179,7 +244,7 @@ PaletteAgain:
 	ldx #15					;Width in tiles
 	ldy #1					;Height in tiles
 
-	lda #3					;TileStart
+	lda #28					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
 	; Left Border
@@ -192,7 +257,7 @@ PaletteAgain:
 	ldx #1					;Width in tiles
 	ldy #15					;Height in tiles
 
-	lda #5					;TileStart
+	lda #30					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
 	; Right Border
@@ -205,7 +270,7 @@ PaletteAgain:
 	ldx #1					;Width in tiles
 	ldy #15					;Height in tiles
 
-	lda #7					;TileStart
+	lda #32					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
 	; Bottom Border
@@ -218,7 +283,7 @@ PaletteAgain:
 	ldx #3					;Width in tiles
 	ldy #1					;Height in tiles
 
-	lda #9					;TileStart
+	lda #34					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
 
@@ -232,21 +297,7 @@ PaletteAgain:
 	ldx #15					;Width in tiles
 	ldy #15					;Height in tiles
 
-	lda #6					;TileStart
-	jsr FillAreaWithTile	;Draw the tiles to screen
-
-
-	; Board Background
-
-	lda #10					;Start SX
-	sta z_B
-	lda #5					;Start SY
-	sta z_C
-
-	ldx #15					;Width in tiles
-	ldy #15					;Height in tiles
-
-	lda #6					;TileStart
+	lda #31					;TileStart
 	jsr FillAreaWithTile	;Draw the tiles to screen
 
 
@@ -262,7 +313,7 @@ PaletteAgain:
 	ldx #3					;Width in tiles
 	ldy #4					;Height in tiles
 
-	lda #11					;TileStart
+	lda #36					;TileStart
 	jsr FillAreaWithTiles	;Draw the tiles to screen
 
 	; Poster 2
@@ -275,7 +326,7 @@ PaletteAgain:
 	ldx #3					;Width in tiles
 	ldy #4					;Height in tiles
 
-	lda #23					;TileStart
+	lda #48					;TileStart
 	jsr FillAreaWithTiles	;Draw the tiles to screen
 
 	; Poster 3
@@ -288,7 +339,7 @@ PaletteAgain:
 	ldx #3					;Width in tiles
 	ldy #3					;Height in tiles
 
-	lda #35					;TileStart
+	lda #60					;TileStart
 	jsr FillAreaWithTiles	;Draw the tiles to screen
 
 	; Loop

@@ -27,6 +27,8 @@ BlankBg:
         .byte   %00000000       ; 000F 1-01:
 BlankBgEnd:
 
+Dog:
+
 WallPatternBg:
         .byte   %01110101       ; Background pattern 0
         .byte   %10101110       ; 
@@ -47,8 +49,473 @@ WallPatternBg:
         .byte   %10101010       ; 
 WallPatternBgEnd:
 
+Dog_1:
+        .byte   %01110101       ; 1
+        .byte   %10100000       ; 
+        .byte   %11000100       ; 
+        .byte   %10001010       ; 
+        .byte   %00010101       ; 
+        .byte   %10101010       ; 
+        .byte   %00010101       ; 
+        .byte   %00000000       ; 
+
+        .byte   %01010101       ;
+        .byte   %10100000       ; 
+        .byte   %01001111       ; 
+        .byte   %10011111       ; 
+        .byte   %00111111       ; 
+        .byte   %10111111       ; 
+        .byte   %01111111       ; 
+        .byte   %01111111       ; 
+
+        .byte   %00000001       ; 2
+        .byte   %00101000       ; 
+        .byte   %01010100       ; 
+        .byte   %00101010       ; 
+        .byte   %00010101       ; 
+        .byte   %10101010       ; 
+        .byte   %00010101       ; 
+        .byte   %00000010       ; 
+
+        .byte   %00000001       ;
+        .byte   %01111100       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+
+        .byte   %01110101       ; 3
+        .byte   %10101110       ; 
+        .byte   %01010101       ; 
+        .byte   %00111010       ; 
+        .byte   %00010111       ; 
+        .byte   %00001110       ; 
+        .byte   %00000001       ; 
+        .byte   %00001000       ; 
+
+        .byte   %01010101       ;
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+        .byte   %11010101       ; 
+        .byte   %11101010       ; 
+        .byte   %11100001       ; 
+        .byte   %11111000       ; 
+
+        .byte   %01110101       ; 4
+        .byte   %10101110       ; 
+        .byte   %11010101       ; 
+        .byte   %10111010       ; 
+        .byte   %01110111       ; 
+        .byte   %10101110       ; 
+        .byte   %11010101       ; 
+        .byte   %00100011       ; 
+
+        .byte   %01010101       ;
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %00100010       ; 
+
+        .byte   %01110101       ; 5
+        .byte   %10101110       ; 
+        .byte   %11010100       ; 
+        .byte   %10111010       ; 
+        .byte   %01110110       ; 
+        .byte   %10101110       ; 
+        .byte   %11010100       ; 
+        .byte   %10111001       ; 
+
+        .byte   %01010101       ;
+        .byte   %10101010       ; 
+        .byte   %01010100       ; 
+        .byte   %10101010       ; 
+        .byte   %01010100       ; 
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101011       ; 
+
+        .byte   %00010101       ; 6
+        .byte   %00000000       ; 
+        .byte   %00000000       ; 
+        .byte   %00000010       ; 
+        .byte   %00000101       ; 
+        .byte   %00010010       ; 
+        .byte   %10101000       ; 
+        .byte   %01010000       ; 
+
+        .byte   %01111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %01010110       ; 7
+        .byte   %00000000       ; 
+        .byte   %00000101       ; 
+        .byte   %10000010       ; 
+        .byte   %01010100       ; 
+        .byte   %10101010       ; 
+        .byte   %00000000       ; 
+        .byte   %00000000       ; 
+
+        .byte   %11111110       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %00011111       ; 8
+        .byte   %00011111       ; 
+        .byte   %00111111       ; 
+        .byte   %00111111       ; 
+        .byte   %00011111       ; 
+        .byte   %00011111       ; 
+        .byte   %00011111       ; 
+        .byte   %00011111       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %00000001       ; 9
+        .byte   %11000000       ; 
+        .byte   %11100001       ; 
+        .byte   %11111000       ; 
+        .byte   %11111011       ; 
+        .byte   %11110000       ; 
+        .byte   %11110001       ; 
+        .byte   %11100001       ; 
+
+        .byte   %00001001       ;
+        .byte   %11011100       ; 
+        .byte   %11111101       ; 
+        .byte   %11111000       ; 
+        .byte   %11111001       ; 
+        .byte   %11111000       ; 
+        .byte   %11111001       ; 
+        .byte   %11111000       ; 
+
+        .byte   %01110010       ; 10
+        .byte   %10100111       ; 
+        .byte   %11001111       ; 
+        .byte   %10011111       ; 
+        .byte   %00111111       ; 
+        .byte   %01111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %01010011       ;
+        .byte   %10100111       ; 
+        .byte   %01001111       ; 
+        .byte   %10011111       ; 
+        .byte   %00111111       ; 
+        .byte   %01111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %10100000       ; 11
+        .byte   %11111000       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %00000000       ; 13
+        .byte   %00000000       ; 
+        .byte   %00000000       ; 
+        .byte   %10000000       ; 
+        .byte   %11000111       ; 
+        .byte   %11000110       ; 
+        .byte   %10000101       ; 
+        .byte   %01001011       ; 
+
+        .byte   %11111101       ;
+        .byte   %11101010       ; 
+        .byte   %11010101       ; 
+        .byte   %11101000       ; 
+        .byte   %11110101       ; 
+        .byte   %11110010       ; 
+        .byte   %11100101       ; 
+        .byte   %11101010       ; 
+
+        .byte   %00001111       ; 14
+        .byte   %00001111       ; 
+        .byte   %00000111       ; 
+        .byte   %00100000       ; 
+        .byte   %01110000       ; 
+        .byte   %10101110       ; 
+        .byte   %11010101       ; 
+        .byte   %10111011       ; 
+
+        .byte   %01111111       ;
+        .byte   %10111111       ; 
+        .byte   %01011111       ; 
+        .byte   %00101111       ; 
+        .byte   %01010000       ; 
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+
+        .byte   %11100001       ; 15
+        .byte   %11000010       ; 
+        .byte   %10000001       ; 
+        .byte   %00000010       ; 
+        .byte   %00000111       ; 
+        .byte   %00001110       ; 
+        .byte   %11010101       ; 
+        .byte   %10111011       ; 
+
+        .byte   %11111001       ;
+        .byte   %11110010       ; 
+        .byte   %11110001       ; 
+        .byte   %11100010       ; 
+        .byte   %11000101       ; 
+        .byte   %00001010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+Dog_1_End:
+
+Dog_2:
+        .byte   %01110101       ; 16 dog torso
+        .byte   %10101110       ; 
+        .byte   %11010101       ; 
+        .byte   %10111010       ; 
+        .byte   %01110111       ; 
+        .byte   %10101110       ; 
+        .byte   %11010100       ; 
+        .byte   %00000011       ; 
+
+        .byte   %01010101       ;
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+        .byte   %01010100       ; 
+        .byte   %10101011       ; 
+
+        .byte   %10101011       ; 17
+        .byte   %01010111       ; 
+        .byte   %10101111       ; 
+        .byte   %01010111       ; 
+        .byte   %10101111       ; 
+        .byte   %01011111       ; 
+        .byte   %10111111       ; 
+        .byte   %01011111       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %10111111       ; 18
+        .byte   %01111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %11111111       ; 19
+        .byte   %10101111       ; 
+        .byte   %01011111       ; 
+        .byte   %00001111       ; 
+        .byte   %00000111       ; 
+        .byte   %00001111       ; 
+        .byte   %00000011       ; 
+        .byte   %00000011       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %00011111       ; 
+        .byte   %00001111       ; 
+        .byte   %00000111       ; 
+        .byte   %00000011       ; 
+
+        .byte   %11111111       ; 20
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %11111111       ; 21
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+        .byte   %11111101       ; 
+        .byte   %11111110       ; 
+        .byte   %11111101       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+
+        .byte   %10000101       ; 22
+        .byte   %00001110       ; 
+        .byte   %00010101       ; 
+        .byte   %00011010       ; 
+        .byte   %00010111       ; 
+        .byte   %00101110       ; 
+        .byte   %00010101       ; 
+        .byte   %00111011       ; 
+
+        .byte   %11100101       ;
+        .byte   %11001010       ; 
+        .byte   %11010101       ; 
+        .byte   %11001010       ; 
+        .byte   %11010101       ; 
+        .byte   %10101010       ; 
+        .byte   %10010101       ; 
+        .byte   %10101010       ; 
+
+        .byte   %11111010       ; 23
+        .byte   %11111100       ; 
+        .byte   %11111000       ; 
+        .byte   %11110100       ; 
+        .byte   %11111000       ; 
+        .byte   %11110000       ; 
+        .byte   %11101000       ; 
+        .byte   %11010000       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+        .byte   %11111110       ; 
+        .byte   %11111110       ; 
+
+        .byte   %00110101       ; 24
+        .byte   %00101110       ; 
+        .byte   %01010101       ; 
+        .byte   %00111010       ; 
+        .byte   %01110111       ; 
+        .byte   %00101110       ; 
+        .byte   %11010101       ; 
+        .byte   %10111011       ; 
+
+        .byte   %10010101       ;
+        .byte   %00101010       ; 
+        .byte   %01010101       ; 
+        .byte   %00101010       ; 
+        .byte   %01010101       ; 
+        .byte   %00101010       ; 
+        .byte   %01010101       ; 
+        .byte   %10101010       ; 
+
+        .byte   %11111111       ; 25
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+        .byte   %11111111       ; 
+        .byte   %11111110       ; 
+        .byte   %11111100       ; 
+        .byte   %11111000       ; 
+        .byte   %11111000       ; 
+
+        .byte   %11111111       ;
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111111       ; 
+        .byte   %11111101       ; 
+        .byte   %11111001       ; 
+
+        .byte   %10100001       ; 26
+        .byte   %01010000       ; 
+        .byte   %10000001       ; 
+        .byte   %01000010       ; 
+        .byte   %00000011       ; 
+        .byte   %10000110       ; 
+        .byte   %00000101       ; 
+        .byte   %00001011       ; 
+
+        .byte   %11111101       ;
+        .byte   %11111100       ; 
+        .byte   %11111101       ; 
+        .byte   %11111010       ; 
+        .byte   %11110001       ; 
+        .byte   %11100010       ; 
+        .byte   %11000101       ; 
+        .byte   %11001010       ; 
+
+
+
+Dog_2_End:
+
+Dog_3_Chest:
+Dog_3_End:
+
+Dog_4:
+Dog_4_End:
+
+Dog_End:
+
 TopLeftCorner:
-        .byte   %00000000       ; 2
+        .byte   %00000000       ; 27
         .byte   %00000000       ; 
         .byte   %00000000       ; 
         .byte   %00000000       ; 
@@ -68,7 +535,7 @@ TopLeftCorner:
 TopLeftCornerEnd:
 
 TopBorder:
-        .byte   %00000000       ; 3
+        .byte   %00000000       ; 28
         .byte   %00000000       ; 
         .byte   %00000000       ; 
         .byte   %00000000       ; 
@@ -88,7 +555,7 @@ TopBorder:
 TopBorderEnd:
 
 TopRightCorner:
-        .byte   %00000000       ; 4
+        .byte   %00000000       ; 29
         .byte   %00000000       ; 
         .byte   %00000000       ; 
         .byte   %00000000       ; 
@@ -108,7 +575,7 @@ TopRightCorner:
 TopRightCornerEnd:
 
 LeftBorder:
-        .byte   %00000000       ;  **** 5
+        .byte   %00000000       ;  **** 30
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
@@ -128,7 +595,7 @@ LeftBorder:
 LeftBorderEnd:
 
 BoardBackground:
-        .byte   %01110101       ; 6 Board Background
+        .byte   %01110101       ; 31 Board Background
         .byte   %10101110       ; 
         .byte   %11011101       ; 
         .byte   %10111010       ; 
@@ -148,7 +615,7 @@ BoardBackground:
 BoardByteackgroundEnd:
 
 RightBorder:
-        .byte   %00000000       ;      **** 7
+        .byte   %00000000       ;      **** 32
         .byte   %00000000       ;      ****
         .byte   %00000000       ;      ****
         .byte   %00000000       ;      ****
@@ -168,7 +635,7 @@ RightBorder:
 RightBorderEnd:
 
 BottomLeftCorner:
-        .byte   %00000000       ;  ****    8
+        .byte   %00000000       ;  ****    33
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
@@ -188,7 +655,7 @@ BottomLeftCorner:
 BottomLeftCornerEnd:
 
 BottomBorder:
-        .byte   %00000000       ;  ******** 9
+        .byte   %00000000       ;  ******** 34
         .byte   %00000000       ;  ********
         .byte   %00000000       ;  ********
         .byte   %00000000       ;  ********
@@ -208,7 +675,7 @@ BottomBorder:
 BottomBorderEnd:
 
 BottomRightCorner:
-        .byte   %00000000       ;  ****     10
+        .byte   %00000000       ;  ****     35
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
         .byte   %00000000       ;  ****
@@ -228,7 +695,7 @@ BottomRightCorner:
 BottomRightCornerEnd:
 
 Poster_1:
-        .byte   %11111111       ; Dark gray            11
+        .byte   %11111111       ; Dark gray  36
         .byte   %11111111       ; 
         .byte   %11111111       ; 
         .byte   %11111111       ; 
@@ -247,7 +714,7 @@ Poster_1:
         .byte   %00000000       ; 
 
 
-        .byte   %11111111       ; Poster 1 Face          12
+        .byte   %11111111       ; Poster 1 Face          37
         .byte   %11011111       ; 
         .byte   %10011111       ; 
         .byte   %00001111       ; 
@@ -265,7 +732,7 @@ Poster_1:
         .byte   %11100000       ; 
         .byte   %01100000       ; 
 
-        .byte   %11111110       ; Poster 1 Left Arm          12
+        .byte   %11111110       ; Poster 1 Left Arm          38
         .byte   %11111100       ; 
         .byte   %11111000       ; 
         .byte   %11100001       ; 
@@ -283,7 +750,7 @@ Poster_1:
         .byte   %00000000       ; 
         .byte   %00000000       ; 
 
-        .byte   %11111111       ; Poster 1 Right Arm          13
+        .byte   %11111111       ; Poster 1 Right Arm          39
         .byte   %11111100       ; 
         .byte   %11111000       ; 
         .byte   %11110000       ; 
@@ -302,7 +769,7 @@ Poster_1:
         .byte   %00000000       ; 
 
 
-        .byte   %11010001       ; Poster 1 Chest
+        .byte   %11010001       ; Poster 1 Chest        40
         .byte   %01110001       ; 
         .byte   %01110001       ; 
         .byte   %00110000       ; 
@@ -321,7 +788,7 @@ Poster_1:
         .byte   %00000000       ; 
 
 
-        .byte   %11111111       ; Poster 1 Left flap
+        .byte   %11111111       ; Poster 1 Left flap    41
         .byte   %11111111       ; 
         .byte   %11111111       ; 
         .byte   %00111110       ; 
@@ -339,7 +806,7 @@ Poster_1:
         .byte   %00000000       ; 
         .byte   %00000000       ; 
 
-        .byte   %11111110       ; Poster 1 Right flap
+        .byte   %11111110       ; Poster 1 Right flap   42
         .byte   %11111110       ; 
         .byte   %01111100       ; 
         .byte   %00011101       ; 
@@ -357,7 +824,7 @@ Poster_1:
         .byte   %00000000       ; 
         .byte   %00000000       ; 
 
-        .byte   %00000000       ; Left foreleg
+        .byte   %00000000       ; Left foreleg          43
         .byte   %00000000       ; 
         .byte   %01000000       ; 
         .byte   %11000001       ; 
@@ -375,7 +842,7 @@ Poster_1:
         .byte   %00000000       ; 
         .byte   %00000000       ; 
 
-        .byte   %00011111       ; Right foreleg
+        .byte   %00011111       ; Right foreleg         44
         .byte   %00001111       ; 
         .byte   %00000111       ; 
         .byte   %00000011       ; 
@@ -393,7 +860,7 @@ Poster_1:
         .byte   %00000000       ; 
         .byte   %00000000       ; 
 
-        .byte   %00011110       ; Right knee and thing in front
+        .byte   %00011110       ; Right knee and thing in front 45
         .byte   %00011111       ; 
         .byte   %00000011       ; 
         .byte   %00000011       ; 
@@ -411,7 +878,7 @@ Poster_1:
         .byte   %11111111       ; 
         .byte   %11111111       ; 
 
-        .byte   %00000001       ; Right tibia
+        .byte   %00000001       ; Right tibia           46
         .byte   %00000000       ; 
         .byte   %11110000       ; 
         .byte   %11111110       ; 
@@ -429,7 +896,7 @@ Poster_1:
         .byte   %11111111       ; 
         .byte   %11111111       ; 
 
-        .byte   %11100001       ; Left tibia
+        .byte   %11100001       ; Left tibia            47
         .byte   %11100011       ; 
         .byte   %00001111       ; 
         .byte   %00011111       ; 
@@ -449,7 +916,7 @@ Poster_1:
 Poster_1_End:
 
 Poster_2:
-        .byte   %01110101       ; 1
+        .byte   %01110101       ; 48
         .byte   %10101010       ; 
         .byte   %11111100       ; 
         .byte   %11111000       ; 
@@ -468,7 +935,7 @@ Poster_2:
         .byte   %00000000       ; 
 
 
-        .byte   %01110101       ; 2
+        .byte   %01110101       ; 49
         .byte   %10101010       ; 
         .byte   %00000000       ; 
         .byte   %00000000       ; 
@@ -487,7 +954,7 @@ Poster_2:
         .byte   %01111110       ; 
 
 
-        .byte   %01110101       ; 3
+        .byte   %01110101       ; 50
         .byte   %10101010       ; 
         .byte   %00000000       ; 
         .byte   %00000000       ; 
