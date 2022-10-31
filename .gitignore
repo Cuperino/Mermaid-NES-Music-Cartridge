@@ -9,3 +9,5 @@ src/music_nes_map.txt
 
 *.gif
 *.png
+
+.directory

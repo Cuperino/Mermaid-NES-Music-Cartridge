@@ -1,0 +1,8 @@
+{
+  "label": "ca65: Compile and Link Current File",
+  "command": "cl65 ${file}",
+  "group": "build",
+  "type": "shell",
+  "input": "src/main.asm",
+  "params": "--verbose --target nes -o ~/output.nes"
+}
