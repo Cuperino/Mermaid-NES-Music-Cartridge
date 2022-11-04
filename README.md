@@ -5,7 +5,7 @@ Mermaid NES Music Cartridge is a music cartridge for the NES/Famicom that plays 
 
 Mermaid NES Music Cartridge was created as an aniversary present to my girlfriend. Happy aniversary Abby!
 
-![Screenshot of Pocket Music's album cover remake for the NES/Famicom](https://github.com/Cuperino/Mermai-NES-Music-Cartridge/raw/master/screenshots/1.jpg)
+![Screenshot of Pocket Music's album cover remake for the NES/Famicom](https://github.com/Cuperino/Mermai-NES-Music-Cartridge/raw/main/screenshots/1.jpg)
 
 The music and its instrument voices were created using [Famitracker](http://famitracker.com/). Artwork was created using [GNU Image Manipulation Program](https://www.gimp.org/), [Tiled](https://www.mapeditor.org/), and [NEXXT](https://frankengraphics.itch.io/nexxt). Software is written in 6502 Assembly for the [cc65 compiler toolchain](https://cc65.github.io/).
 
