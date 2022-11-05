@@ -7,7 +7,7 @@ Mermaid NES Music Cartridge was created as an aniversary present to my girlfrien
 
 ![Screenshot of Pocket Music's album cover remake for the NES/Famicom](https://github.com/Cuperino/Mermaid-NES-Music-Cartridge/raw/main/screenshots/2.jpg)
 
-The music and its instrument voices were created using [Famitracker](http://famitracker.com/). Artwork was created using [GNU Image Manipulation Program](https://www.gimp.org/), [Tiled](https://www.mapeditor.org/), and [NEXXT](https://frankengraphics.itch.io/nexxt). Software is written in 6502 Assembly for the [cc65 compiler toolchain](https://cc65.github.io/).
+The music and its instrument voices were created using [Famitracker](http://famitracker.com/). An extra channel from the Famicom Disk System expansion pack is used for padding and chorus; this channel is optional and not used in the NES ROM. Artwork was created using [GNU Image Manipulation Program](https://www.gimp.org/), [Tiled](https://www.mapeditor.org/), and [NEXXT](https://frankengraphics.itch.io/nexxt). Software is written in 6502 Assembly for the [cc65 compiler toolchain](https://cc65.github.io/).
 
 The ROM runs in NTSC. It has been tested to work on MiSTer FPGA hardware using the [NES_MiSTer core](https://github.com/MiSTer-devel/NES_MiSTer), and on Linux builds of the [FCEUX](https://fceux.com/web/home.html) and [Nestopia](https://nestopia.sourceforge.net/) emmulators.
 

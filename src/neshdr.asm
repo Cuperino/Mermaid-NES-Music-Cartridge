@@ -30,12 +30,9 @@
 ;    | ..-EOF |      | CHR-ROM pages (in ascending order).      |
 ;    +--------+------+------------------------------------------+
 
-;         .byte   $4e,$45,$53,$1a ; "NES"^Z
         .byte   "NES",$1a		;ID
         .byte   2               ; ines prg  - Specifies the number of 16k prg banks.
         .byte   1               ; ines chr  - Specifies the number of 8k chr banks.
-;         .byte   1               ; ines prg  - Specifies the number of 16k prg banks.
-;         .byte   0               ; ines chr  - Specifies the number of 8k chr banks.
         .byte   %00000000       ; ines mir  - Specifies VRAM mirroring of the banks.
         .byte   %00000000       ; ines map  - Specifies the NES mapper used.
         .byte   0,0,0,0,0,0,0,0 ; RAM pages and 7 zeroes
